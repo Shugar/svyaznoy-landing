@@ -74,9 +74,6 @@
   font-family: "Svyaznoy RF Bold"
 
 .nav__item
-  -webkit-box-flex: 1
-  -webkit-flex: 1
-  -ms-flex: 1
   flex: 1 1 0%
   padding: 15px 20px
   color: #fff
@@ -84,6 +81,8 @@
   text-decoration: none
   text-align: center
   font-size: 18px
+
+  display: block
 
 .nav__item_green
   background: #91c74b
@@ -465,7 +464,7 @@
     padding: 50px 0
 
   .nav .container
-    flex-flow: column nowrap
+    display: block
 
   .nav__item
     font-size: 16px
@@ -498,7 +497,7 @@
     height: auto
 
   .works__column
-    justify-content: flex-start
+    display: block
 
   .works__item
     width: 100%
