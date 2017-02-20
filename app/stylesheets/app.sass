@@ -5,317 +5,316 @@
 @import 'tools/_fonts'
 
 .opacity
+  display: none
   position: absolute
   top: 0
   left: 0
   width: 100%
   height: 100%
-  background: rgba(0,0,0,0.5)
-  display: none
+  background: rgba(0, 0, 0, .5)
 
 .welcome
   height: 100vh
   width: 100%
-  background: url('../images/background.jpg') no-repeat center / cover
+  background: url(../images/background.jpg) no-repeat center/cover
 
-  .container
-    display: flex
-    flex-flow: column nowrap
-    align-items: flex-end
-    text-align: right
+.welcome .container
+  display: flex
+  flex-flow: column nowrap
+  align-items: flex-end
+  text-align: right
 
-  &__inner
-    position: absolute
-    top: 50%
-    right: 65px
-    transform: translateY(-50%)
+.welcome__inner
+  position: absolute
+  top: 50%
+  right: 65px
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
 
-  &__title
-    font-size: 40px
-    line-height: 60px
+.welcome__title
+  font-size: 40px
+  line-height: 60px
 
-  &__logo
-    margin-top: 50px
+.welcome__logo
+  margin-top: 50px
 
-  &__vc
-    margin-top: 15px
-    font-size: 34px
-    line-height: 60px
-    margin-bottom: 10px
+.welcome__vc
+  margin-top: 15px
+  font-size: 34px
+  line-height: 60px
+  margin-bottom: 10px
 
-  &__button
-    margin-top: 80px
+.welcome__button
+  margin-top: 80px
 
-    a
-      background: #9061a9
-      padding: 15px 20px
-      max-width: 285px
-      color: #fff
-      text-decoration: none
-      font-size: 18px
-      transition: background .2s ease
-      font-family: 'Svyaznoy RF Bold'
+.welcome__button a
+  background: #9061a9
+  padding: 15px 20px
+  max-width: 285px
+  color: #fff
+  text-decoration: none
+  font-size: 18px
+  transition: background .2s ease
+  font-family: "Svyaznoy RF Bold"
 
-
-      &:hover
-        background: #5DB5E5
+.welcome__button a:hover
+  background: #5db5e5
 
 .nav
   padding: 2% 0
   background: #e7e7e7
 
-  .container
-    display: flex
-    flex-flow: row nowrap
-    align-items: center
-    justify-content: center
-    font-family: 'Svyaznoy RF Bold'
+.nav .container
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: center
+  font-family: "Svyaznoy RF Bold"
 
+.nav__item
+  -webkit-box-flex: 1
+  -webkit-flex: 1
+  -ms-flex: 1
+  flex: 1 1 0%
+  padding: 15px 20px
+  color: #fff
+  font-weight: 700
+  text-decoration: none
+  text-align: center
+  font-size: 18px
 
-  &__item
-    padding: 15px 20px
-    color: #fff
-    font-weight: bold
-    text-decoration: none
-    width: 25%
-    text-align: center
-    min-width: 300px
-    font-size: 18px
+.nav__item_green
+  background: #91c74b
 
-    &_green
-      background: #91C74B
+.nav__item_orange
+  background: #faac3d
+  margin: 0 5%
 
-    &_orange
-      background: #f8af2d
-      margin: 0 5%
-
-    &_blue
-      background: #5db6e5
-
+.nav__item_blue
+  background: #5db6e5
 
 .works
   height: 1px
-  min-height: 100vh
-  background: url('../images/background-2.jpg') no-repeat center / cover
+  height: 100vh
+  min-height: 650px
+  background: url(../images/background-2.jpg) no-repeat center/cover
   padding: 15px 0 40px 0
 
-  .container
-    height: 1px
+.works .container
+  height: 1px
 
-  &__title
-    font-size: 40px
-    text-align: center
+.works__title
+  font-size: 40px
+  text-align: center
 
-  &__inner
-    display: flex
-    flex-flow: row nowrap
-    justify-content: space-between
-    height: 82%
-    margin-top: 35px
+.works__inner
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  height: 82%
 
-  &__column
-    display: flex
-    flex-flow: column nowrap
-    justify-content: space-between
-    height: 100%
+.works__column
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
+  height: 100%
 
-  &__item
-    background: #9061a9
-    width: 200px
-    height: 200px
-    position: relative
-    color: #fff
+.works__item
+  background: #9061a9
+  width: 200px
+  height: 200px
+  position: relative
+  color: #fff
 
-    &:not(:first-child)
-      margin-top: 15%
+.works__item:not(:first-child)
+  margin-top: 15%
 
-    &_green
-      background: #91C74B
+.works__item_green
+  background: #91c74b
 
-    &_orange
-      background: #f8af2d
+.works__item_orange
+  background: #faac3d
 
-    &_blue
-      background: #5db6e5
+.works__item_blue
+  background: #5db5e5
 
-  &__text
-    position: absolute
-    top: 50%
-    left: 50%
-    width: 75%
-    transform: translate(-50%, -50%)
-    text-align: center
-    line-height: 22px
-    font-size: 18px
+.works__text
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 75%
+  transform: translate(-50%, -50%)
+  text-align: center
+  line-height: 22px
+  font-size: 18px
 
 .spacer
   background: #e7e7e7
   height: 5vh
 
 .about
-  background: url('../images/about-bg.jpg') no-repeat center / cover
+  background: url(../images/about-bg.jpg) no-repeat center/cover
   height: 100vh
+  min-height: 650px
   padding: 50px 0
 
-  .container
-    display: flex
-    flex-flow: row nowrap
-    justify-content: flex-end
+.about .container
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-end
 
-  &__inner
-    width: 35%
-    max-width: 370px
+.about__inner
+  width: 35%
+  max-width: 370px
 
-  &__title
-    text-align: center
-    font-size: 40px
+.about__title
+  text-align: center
+  font-size: 40px
 
-  &__text-inner
-    margin-top: 40%
-    background: #f8af2d
-    color: #fff
-    padding: 30px 20px
-    font-size: 18px
-    line-height: 22px
+.about__text-inner
+  margin-top: 40%
+  background: #faac3d
+  color: #fff
+  padding: 30px 20px
+  font-size: 18px
+  line-height: 22px
 
-  &__text
-    &:not(:first-child)
-      margin-top: 10%
+.about__text:not(:first-child)
+  margin-top: 10%
 
 .experience
   background: #e7e7e7
   padding: 20px 0
 
-  .container
-    display: flex
-    flex-flow: row nowrap
-    align-items: center
+.experience .container
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
 
-  &__icon
-    min-width: 140px
-    width: 140px
-    height: 140px
-    background: url('../images/prize.png') no-repeat center / contain
+.experience__icon
+  min-width: 140px
+  width: 140px
+  height: 140px
+  background: url(../images/prize.png) no-repeat center/contain
 
-  &__text-inner
-    color: #fff
-    background: #5db6e5
-    padding: 20px 50px
-    margin-left: 30px
-    text-align: center
-    font-size: 18px
-    line-height: 26px
+.experience__text-inner
+  color: #fff
+  background: #5db6e5
+  padding: 20px 50px
+  margin-left: 30px
+  text-align: center
+  font-size: 18px
+  line-height: 26px
 
-  &__text
-    &:last-child
-      margin-top: 25px
-
+.experience__text:last-child
+  margin-top: 25px
 
 .ready
-  background: url('../images/ready-bg.jpg') no-repeat center / cover
+  background: url(../images/ready-bg.jpg) no-repeat center/cover
   height: 100vh
+  min-height: 650px
   padding: 50px 0
 
-  .container
-    display: flex
-    flex-flow: row nowrap
-    justify-content: flex-start
+.ready .container
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
 
-  &__inner
-    width: 27%
-    max-width: 370px
+.ready__inner
+  width: 27%
+  max-width: 370px
 
-  &__title
-    text-align: left
-    font-size: 40px
-    width: 80%
+.ready__title
+  text-align: left
+  font-size: 40px
+  width: 80%
 
-  &__text-inner
-    margin-top: 20%
-    background: #9061a9
-    color: #fff
-    padding: 30px 20px
-    font-size: 18px
-    line-height: 22px
+.ready__text-inner
+  margin-top: 20%
+  background: #9061a9
+  color: #fff
+  padding: 30px 20px
+  font-size: 18px
+  line-height: 22px
 
-  &__text
-    &:not(:first-child)
-      margin-top: 10%
+.ready__text:not(:first-child)
+  margin-top: 10%
 
 .how-to
-  padding: 40px 0
+  padding: 50px 0
   background: #e7e7e7
 
-  &__title
-    font-size: 40px
-    text-align: center
+.how-to__title
+  font-size: 40px
+  text-align: center
 
-  &__inner
-    margin-top: 50px
-    display: flex
-    flex-flow: row nowrap
-    align-items: flex-start
-    justify-content: space-between
+.how-to__inner
+  margin-top: 50px
+  display: flex
+  flex-flow: row nowrap
+  align-items: flex-start
+  justify-content: space-between
 
-  &__item
-    text-align: center
-    width: 20%
+.how-to__item
+  text-align: center
+  width: 20%
 
-    img
-      width: 80%
+.how-to__item img
+  width: 80%
 
-    &_arrow
-      width: 15%
-      img
-        margin-top: 20px
-        width: 80%
+.how-to__item_arrow
+  width: 15%
 
-  &__text-title
-    margin-top: 20px
-    font-size: 25px
-    line-height: 35px
-    font-family: 'Svyaznoy RF Bold'
+.how-to__item_arrow img
+  margin-top: 20px
+  width: 80%
 
-  &__text
-    font-weight: 200
-    font-size: 18px
-    line-height: 22px
-    margin-top: 10px
+.how-to__text-title
+  margin-top: 20px
+  font-size: 25px
+  line-height: 35px
+  font-family: "Svyaznoy RF Bold"
+
+.how-to__text
+  font-weight: 200
+  font-size: 18px
+  line-height: 22px
+  margin-top: 10px
 
 .footer
-  padding: 80px 0 40px 0
+  padding: 50px 0
   background: #e7e7e7
 
-  .container
-    text-align: center
+.footer .container
+  text-align: center
 
-  &__welcome
-    font-size: 40px
+.footer__welcome
+  font-size: 40px
 
-  &__tag
-    font-size: 40px
-    margin-top: 40px
+.footer__tag
+  font-size: 40px
+  margin-top: 40px
 
-  &__button
-    background: #9061a9
-    padding: 15px 20px
-    max-width: 300px
-    color: #fff
-    text-decoration: none
-    font-size: 16px
-    text-align: center
-    transition: background .2s ease
-    display: inline-block
-    margin-top: 40px
-    text-transform: uppercase
-    font-weight: bold
-    font-family: 'Svyaznoy RF Bold'
+.footer__button
+  background: #9061a9
+  padding: 15px 20px
+  max-width: 300px
+  color: #fff
+  text-decoration: none
+  font-size: 16px
+  text-align: center
+  transition: background .2s ease
+  display: inline-block
+  margin-top: 40px
+  text-transform: uppercase
+  font-weight: 700
+  font-family: "Svyaznoy RF Bold"
 
+.footer__button:hover
+  background: #5db5e5
 
-    &:hover
-      background: #5DB5E5
-
-@media (max-width: $tablet)
+@media (max-width:1025px)
   .container
     padding: 0 30px
 
@@ -323,288 +322,318 @@
     background-size: 175%
     background-position: 65%
 
-    &__logo
-      margin-top: 30px
+  .welcome__logo
+    margin-top: 30px
 
-    &__inner
-      right: 30px
+  .welcome__inner
+    right: 30px
 
-    &__title
-      line-height: 30px
-      font-size: 30px
+  .welcome__title
+    line-height: 30px
+    font-size: 30px
 
-    &__vc
-      font-size: 25px
-      line-height: 30px
+  .welcome__vc
+    font-size: 25px
+    line-height: 30px
 
-    &__button
-      margin-top: 40px
+  .welcome__button
+    margin-top: 40px
 
-  .nav
+  .nav__item
+    font-size: 14px
+    width: 20%
+    min-width: 245px
 
-    &__item
-      font-size: 14px
-      width: 20%
-      min-width: 245px
-
-      &_orange
-        margin: 0 2%
+  .nav__item_orange
+    margin: 0 2%
 
   .works
     background-position: 77%
 
-    &__title
-      font-size: 30px
+  .works__title
+    font-size: 30px
 
-    &__text
-      font-size: 16px
+  .works__text
+    font-size: 16px
 
   .about
     background-position: 80%
     background-size: 140%
+    height: initial
+    min-height: initial
 
-    &__title
-      font-size: 30px
+  .about__title
+    font-size: 30px
 
-    &__text-inner
-      margin-top: 20%
-      font-size: 16px
+  .about__text-inner
+    margin-top: 20%
+    font-size: 16px
 
-  .experience
-    &__text-inner
-      padding: 20px 40px
-      font-size: 16px
-      line-height: 20px
+  .experience__text-inner
+    padding: 20px 40px
+    font-size: 16px
+    line-height: 20px
 
-  .ready
-    &__title
-      font-size: 30px
+  .ready__title
+    font-size: 30px
 
-    &__text-inner
-      font-size: 16px
+  .ready__text-inner
+    font-size: 16px
 
-  .how-to
-    &__title
-      font-size: 30px
+  .how-to__title
+    font-size: 30px
 
-    &__inner
-      padding: 0
+  .how-to__inner
+    padding: 0
 
-    &__item
-      width: 23%
+  .how-to__item
+    width: 23%
 
-      &_arrow
-        width: 15%
-        img
-          width: 80%
-          margin-top: 30%
+  .how-to__item_arrow
+    width: 15%
 
-    &__text-title
-      font-size: 18px
-      line-height: 23px
+  .how-to__item_arrow img
+    width: 80%
+    margin-top: 30%
 
-    &__text
-      font-size: 16px
+  .how-to__text-title
+    font-size: 18px
+    line-height: 23px
+
+  .how-to__text
+    font-size: 16px
 
   .footer
     padding-top: 40px
 
-    &__welcome
-      font-size: 30px
+  .footer__welcome
+    font-size: 30px
 
-    &__tag
-      font-size: 30px
-      margin-top: 25px
+  .footer__tag
+    font-size: 30px
+    margin-top: 25px
 
-    &__button
-      margin-top: 25px
+  .footer__button
+    margin-top: 25px
 
-@media (max-width: $mobile)
+
+
+@media (max-width:768px)
   .container
     padding: 0 15px
+
+  .how-to
+    padding-bottom: 0
 
   .welcome
     background-size: cover
     background-position: 35%
 
-    &__logo
-      margin-top: 30px
-      width: 60%
+  .welcome__logo
+    margin-top: 30px
+    width: 60%
 
-      img
-        width: 100%
+  .welcome__logo img
+    width: 100%
 
-    &__inner
-      left: 50%
-      width: 90%
-      transform: translate(-50%, -50%)
-      right: initial
-      color: #fff
-      text-align: center
+  .welcome__inner
+    left: 50%
+    width: 90%
+    transform: translate(-50%, -50%)
+    right: initial
+    color: #fff
+    text-align: center
 
+  .welcome__title
+    line-height: 25px
+    font-size: 25px
+    text-shadow: 1px 1px 1px #000
 
-    &__title
-      line-height: 25px
-      font-size: 25px
-      text-shadow: 1px 1px 1px #000
+  .welcome__vc
+    font-size: 25px
+    line-height: 25px
+    text-shadow: 1px 1px 1px #000
 
-    &__vc
-      font-size: 25px
-      line-height: 25px
-      text-shadow: 1px 1px 1px #000
+  .welcome__button
+    margin-top: 40px
 
-    &__button
-      margin-top: 40px
-      a
-        font-size: 15px
+  .welcome__button a
+    font-size: 15px
 
   .nav
-    padding: 5% 0
+    padding: 50px 0
 
-    .container
-      flex-flow: column nowrap
+  .nav .container
+    flex-flow: column nowrap
 
-    &__item
-      font-size: 14px
-      width: 20%
-      min-width: 245px
+  .nav__item
+    font-size: 16px
+    width: 100%
+    min-width: initial
 
-      &_orange
-        margin: 5% 0
+  .nav__item_orange
+    margin: 5% 0
 
   .works
     background-size: cover
     background-position: center
-    background: none
+    background: 0 0
     padding: 0
+    height: initial
 
-    .container
-      padding: 0
+  .works .container
+    padding: 0
+    height: initial
 
-    &__title
-      font-size: 20px
-      padding-top: 20px
+  .works__title
+    font-size: 20px
+    padding: 30px 0
 
-    &__text
-      font-size: 16px
+  .works__text
+    font-size: 16px
 
-    &__inner
-      flex-flow: column nowrap
-      height: auto
-      margin-top: 20px
+  .works__inner
+    flex-flow: column nowrap
+    height: auto
 
-    &__column
-      justify-content: flex-start
+  .works__column
+    justify-content: flex-start
 
-    &__item
-      width: 100%
-      margin-top: 0
-      height: 16vh
+  .works__item
+    width: 100%
+    margin-top: 0
+    height: initial
+    padding: 70px 0
 
-      &:not(:first-child)
-        margin-top: 0
+  .works__item:not(:first-child)
+    margin-top: 0
 
-    &__text
-      width: 95%
+  .works__text
+    width: 80%
+    font-size: 18px
 
   .spacer
     display: none
 
   .about
+    background: #faac3d
     background-position: center
     background-size: cover
     position: relative
 
-    .opacity
-      display: block
+  .about .container
+    justify-content: center
 
-    &__title
-      font-size: 20px
-      color: #fff
+  .about .opacity
+    display: block
 
-    &__inner
-      width: 100%
+  .about__title
+    font-size: 22px
+    color: #fff
 
-    &__text-inner
-      margin-top: 30%
-      font-size: 18px
-      padding: 0
-      background: transparent
+  .about__inner
+    width: 100%
+
+  .about__text-inner
+    text-align: center
+    margin-top: 30px
+    font-size: 16px
+    padding: 0
+    background: 0 0
 
   .experience
+    padding: 35px 0 50px
+    background: #28b6f8
 
-    .container
-      flex-flow: column nowrap
+  .experience .container
+    padding: 0
+    flex-flow: column nowrap
 
-    &__text-inner
-      padding: 20px
-      font-size: 16px
-      line-height: 20px
-      margin: 0
+  .experience__text-inner
+    padding: 0 20px
+    font-size: 16px
+    line-height: 20px
+    margin: 0
+    background: 0 0
 
-    &__icon
-      width: 100px
-      min-width: 100px
+  .experience__icon
+    width: 100px
+    min-width: 100px
+    height: 100px
+    margin-bottom: 20px
 
   .ready
     position: relative
-    .opacity
-      display: block
+    background: #9061a9
+    min-height: initial
+    height: initial
 
-    &__inner
-      width: 100%
-      color: #fff
+  .ready .container
+    justify-content: center
 
-    &__title
-      font-size: 20px
-      width: 100%
-      text-align: center
+  .ready .opacity
+    display: block
 
-    &__text-inner
-      font-size: 16px
-      background: none
-      margin-top: 40%
-      padding: 30px 0
+  .ready__text:not(:first-child)
+    margin-top: 20px
 
-  .how-to
-    &__title
-      font-size: 20px
+  .ready__inner
+    width: 100%
+    color: #fff
 
-    &__inner
-      padding: 0
-      flex-flow: column nowrap
-      align-items: center
-      margin-top: 10px
+  .ready__title
+    font-size: 20px
+    width: 100%
+    text-align: center
 
-    &__item
-      width: 100%
-      margin-top: 30px
-      img
-        width: 40%
+  .ready__text-inner
+    font-size: 16px
+    background: 0 0
+    margin-top: 20px
+    padding: 30px 0
+    text-align: center
 
-      &_arrow
-        width: 15%
-        img
-          width: 80%
-          margin-top: 30%
-          transform: rotate(90deg)
+  .how-to__title
+    font-size: 20px
 
-    &__text-title
-      font-size: 18px
-      line-height: 23px
+  .how-to__inner
+    padding: 0
+    flex-flow: column nowrap
+    align-items: center
+    margin-top: 10px
 
-    &__text
-      font-size: 16px
+  .how-to__item
+    width: 100%
+    margin-top: 30px
+
+  .how-to__item img
+    width: 40%
+
+  .how-to__item_arrow
+    width: 15%
+
+  .how-to__item_arrow img
+    width: 80%
+    margin-top: 30%
+    transform: rotate(90deg)
+
+  .how-to__text-title
+    font-size: 18px
+    line-height: 23px
+
+  .how-to__text
+    font-size: 16px
 
   .footer
     padding-top: 40px
 
-    &__welcome
-      font-size: 20px
+  .footer__welcome
+    font-size: 20px
 
-    &__tag
-      font-size: 20px
-      margin-top: 15px
+  .footer__tag
+    font-size: 20px
+    margin-top: 10px
+    margin-bottom: 10px
 
-    &__button
-      margin-top: 15px
+  .footer__button
+    margin-top: 15px
