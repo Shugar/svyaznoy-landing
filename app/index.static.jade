@@ -1,0 +1,149 @@
+doctype html
+head
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  meta(name="viewport" content="width=device-width")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  link(rel="stylesheet" href="http://s3.eu-central-1.amazonaws.com/svyaznoy-cdn/fonts.css")
+  link(rel="stylesheet" href="stylesheets/app.css")
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
+
+body
+  .welcome
+    .container
+      .welcome__logo
+        img(src="images/logo.svg")
+      .welcome__inner
+        .welcome__title
+          Присоединяйтесь к нам!
+        .welcome__vc
+          Вакансия
+        .welcome__title
+          Менеджер по продажам
+        .welcome__button
+          a(href="#")
+            |ПРОЙТИ ОНЛАЙН ИНТЕРВЬЮ
+
+  .nav
+    .container
+      a.nav__item.nav__item_green(href="#works") Наши предложения о работе
+      a.nav__item.nav__item_orange(href="#about") О вакансии
+      a.nav__item.nav__item_blue(href="#how-to") Как откликнуться на вакансию
+
+  .works#works
+    .container
+      .works__title
+        |Наши предложения о работе
+
+      .works__inner
+        .works__column
+          .works__item.works__item_orange
+            .works__text
+              |Возможность увеличивать свой заработок
+          .works__item.works__item_green
+            .works__text
+              |Лучшие мотивации с возможностью поездок по всему миру
+          .works__item.works__item_blue
+            .works__text
+              |Гибкий рабочий график 5/2, 2/2
+
+        .works__column
+          .works__item.works__item_purple
+            .works__text
+              |Скидки на технику и туристические путевки
+          .works__item.works__item_blue
+            .works__text
+              |"Белая" зарплата и оформление по ТК РФ
+          .works__item.works__item_green
+            .works__text
+              |Возможность быстрого карьерного роста
+
+  .spacer
+
+  .about#about
+    .opacity
+    .container
+      .about__inner
+        .about__title
+          |О вакансии
+
+        .about__text-inner
+          .about__text
+            |Профессиональное предложение клиентам новинок аудио, видео и фототехники​
+
+          .about__text
+            |Предложение клиентам самых выгодных контрактов операторов сотовой связи и дополнительных услуг
+
+          .about__text
+            |Трансляция стандартов клиентского сервиса
+
+  .experience
+    .container
+      .experience__icon
+      .experience__text-inner
+        .experience__text
+          |Опыт работы нам не важен!
+        .experience__text
+          |Новые знания и навыки поможет получить наш Корпоративный Университет, который существует в компании более 15 лет и ежегодно выпускает более 10000 квалифицированных сотрудников!
+
+  .ready
+    .opacity
+    .container
+      .ready__inner
+        .ready__title
+          |Рады сотрудничать, если Вы
+        .ready__text-inner
+          .ready__text
+            |Старше 18 лет
+          .ready__text
+            |Хотите работать в команде, увлеченной своим делом
+          .ready__text
+            |Хотите работать и развиваться в продажах
+
+
+  .how-to#how-to
+    .container
+      .how-to__title
+        |Как пройти онлайн-интервью?
+
+      .how-to__inner
+        .how-to__item
+          .how-to__icon
+            img(src="images/mail.png")
+          .how-to__text-title
+            |ОТБОР ПО РЕЗЮМЕ
+          .how-to__text
+            |Поздравляем! Вы его прошли!
+        .how-to__item.how-to__item_arrow
+          img(src="images/arrows.png")
+        .how-to__item
+          .how-to__icon
+            img(src="images/earphones.png")
+          .how-to__text-title
+            |ОНЛАЙН ИНТЕРВЬЮ
+          .how-to__text
+            |Вам понадобится ноутбук или мобильное устройство и несколько минут Вашего времени!
+        .how-to__item.how-to__item_arrow
+          img(src="images/arrows.png")
+        .how-to__item
+          .how-to__icon
+            img(src="images/rupor.png")
+          .how-to__text-title
+            |ПРИГЛАШЕНИЕ НА СОБЕСЕДОВАНИЕ
+          .how-to__text
+            |В случае успеха с Вами свяжутся рекрутеры!
+
+  .footer
+    .container
+      .footer__welcome
+        |Приходите к нам!
+
+      .footer__tag
+        |#связнойонтакой
+
+      a.footer__button(href="#")
+        |Пройти онлайн интервью
